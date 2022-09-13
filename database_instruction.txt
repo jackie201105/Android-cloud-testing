@@ -1,0 +1,33 @@
+using MongoDB Compass
+
+1. create a database named 'test_platform'
+2. create five collections with the following names:
+   account, device, setting, task, task_result
+3. create a view of 'the device' collection:
+   name: device_stat_by_type
+   add stage ($group):
+      {
+        _id: '$RAM',
+        count: {
+          $sum: '$usage_count'
+        }
+      }
+4. create a view of the 'task_result' collection:
+    name: stat_perf
+    add stage ($match):
+      {
+        time_cold_start: {
+          $gt: 0
+        }
+      }
+   add stage ($sort):
+     {
+       time_cold_start: 1
+     }
+5. create a view of the 'task_result' collection:
+   name: stat_stab
+   add stage ($sort):
+    {
+      crash_rate: 1,
+      anr_rate: 1
+    }
