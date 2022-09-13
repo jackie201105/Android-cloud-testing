@@ -1,3 +1,13 @@
+This project is a cloud-based Android app testing platform that provides users with
+automated testing services including performance and stability evaluation. The
+platform offers users a wide range of Android devices for automation evaluation,
+which helps them to conduct comprehensive testing of their Android apps on
+different devices. Additionally, with the help of comprehensive test reports provided
+by the platform, users can identify gaps between different apps, as well as know key
+areas requiring improvement. Finally, this platform helps users to effectively evaluate
+their small-scale Android applications on performance and stability metrics in an
+economic way.
+
 一. Features
 
     1. Sign up and Login
