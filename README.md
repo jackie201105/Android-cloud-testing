@@ -11,6 +11,7 @@ their small-scale Android applications on performance and stability metrics in a
 economic way.
 
 1. Architecture
+![architecture](https://user-images.githubusercontent.com/22862452/189889771-b3fdbfe2-19e0-47cc-9a0d-29a7d7a07801.jpg)
 
 
 2. Features
